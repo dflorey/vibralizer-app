@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "Vibralizer FS-4",
+  "short_name": "Vibralizer",
+  "description": "A vintage-style music app from the FS family.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#24211d",
+  "theme_color": "#24211d",
+  "categories": ["music", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
