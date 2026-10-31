@@ -1791,7 +1791,8 @@ registerProcessor('vibralizer-capture', class extends AudioWorkletProcessor {
       grid-column: 1 / -1;
       justify-self: stretch;
       display: grid;
-      grid-template-columns: minmax(140px, 240px) minmax(0, 1fr) auto auto auto;
+      /* Slider and name share the room, the name more of it: a fixed slider squeezed it to "JASC…" */
+      grid-template-columns: minmax(120px, 1fr) minmax(150px, 1.4fr) auto auto auto;
       align-items: end;
       gap: 0.5rem 1.2rem;
       margin-bottom: 0.7rem;
