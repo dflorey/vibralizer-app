@@ -1,16 +1,16 @@
 # Example recordings
 
-Recordings played by the example slider, analysed like a note played into the microphone. Each
-is listed in `src/examples.ts` with the player's name shown in the readout; an instrument with no
-entries there shows no examples.
+Recordings played from the recordings slider, analysed like a note played into the microphone.
+Each is listed in `src/examples.ts` in its slot (of five), with the player's name shown in the
+readout; a slot without one shows "No recording" until a note you play is kept there.
 
-| File             | Violin              |
-| ---------------- | ------------------- |
-| `heifetz.wav`    | Jascha Heifetz      |
-| `ostrakh.wav`    | David Oistrakh      |
-| `horschhorn.wav` | Philippe Hirschhorn |
-| `vengerov.wav`   | Maxim Vengerov      |
-| `duanaz.wav`     | María Dueñas        |
+| Slot | File             | Violin              |
+| ---- | ---------------- | ------------------- |
+| 1    |                  | (empty)             |
+| 2    | `heifetz.wav`    | Jascha Heifetz      |
+| 3    | `ostrakh.wav`    | David Oistrakh      |
+| 4    | `horschhorn.wav` | Philippe Hirschhorn |
+| 5    | `vengerov.wav`   | Maxim Vengerov      |
 
 Viola, cello, flute and trumpet have none yet.
 
@@ -25,8 +25,7 @@ formats (M4A, FLAC) to WAV first.
 
 Tips for good results:
 
-- One held note: a note is recorded for at most 3 s, and another note (1.5 semitones or more
-  away) ends it.
+- One held note: a note is recorded for at most 5 s, until its level drops.
 - Solo, without accompaniment, so the pitch can be read.
 - Normalised to about −3 dBFS peak: a note is only recorded above −42 dBFS (RMS) and ends 30 dB
   below its loudest point (never below −52 dBFS).
