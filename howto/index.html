@@ -1136,7 +1136,7 @@
               <li><strong>Any pitch movement is fine.</strong> However wide your vibrato or slide, the note goes on until the sound fades.</li>
               <li><strong>Up to 5 seconds.</strong> A longer note is cut there; holding it on doesn’t start a new recording until you stop or change note.</li>
               <li><strong>Too short</strong> (under 0.35 s): ignored, so a knock or cough doesn’t replace your last note.</li>
-              <li><strong>Afterwards</strong> the note is analysed again from its sound, more precisely, and plays back by itself. For a moment after any playback the microphone ignores the room, so the speakers’ echo isn’t recorded as a new note.</li>
+              <li><strong>Afterwards</strong> the note is analysed again from its sound, more precisely, and plays back by itself. Nothing is ever recorded while a recording plays, nor for a moment after it (or after you stop it), while the speakers and the reverb ring out, so a playback is never taken for a new note.</li>
             </ul>
           </section>
 
@@ -1220,7 +1220,7 @@
             <details>
               <summary>Headphones or speakers?</summary>
               <div>
-                <p>Either. The microphone is muted while a recording plays and for a moment after, so the speakers aren’t recorded.</p>
+                <p>Either. Nothing is recorded while a recording or the tone plays, nor for a moment after, so the speakers are never recorded. Over Bluetooth speakers the sound comes late; the Vibralizer waits for that too.</p>
               </div>
             </details>
           </section>
